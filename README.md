@@ -20,5 +20,8 @@ An application that enables employees to generate random passwords based on crit
 This homework is graded based on the following criteria: 
 
 ## Deployment
-* Application is deployed here: 
+* Application is deployed here: https://mohammedottun.github.io/password-generator/
+
+
+
 
