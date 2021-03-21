@@ -81,7 +81,7 @@ function randomize(a) {
 // Password generator function
 function generatePassword() {
   var selection = passwordSelection();
-  
+
   // Array variable to store password string
   var result = [];
 
@@ -89,10 +89,31 @@ function generatePassword() {
   var possiblecCharSelection = [];
 
   // Array variable to store password charcter types user has chosen
-  var actualCharSelection = []; 
+  var actualCharSelection = [];
+
+  // Conditional to add charcters to actualCharSelection 
+  if (selection.hasNumericChars) {
+    possiblecCharSelection = possiblecCharSelection.concat(numericChars);
+    actualCharSelection = actualCharSelection.push(randomize(numericChars));
+  }
+
+  if (selection.hasLowerCaseLetters) {
+    possiblecCharSelection = possiblecCharSelection.concat(lowerCaseLetters);
+    actualCharSelection = actualCharSelection.push(randomize(lowerCaseLetters));
+  }
+  if (selection.hasUpperCaseLetters) {
+    possiblecCharSelection = possiblecCharSelection.concat(upperCaseLetters);
+    actualCharSelection = actualCharSelection.push(randomize(upperCaseLetters));
+  }
+  if (selection.hasSpecialChars) {
+    possiblecCharSelection = possiblecCharSelection.concat(specialChars);
+    actualCharSelection = actualCharSelection.push(randomize(specialChars));
+  }
 
 
 }
+
+
 
 // Write password to the #password input
 function writePassword() {
