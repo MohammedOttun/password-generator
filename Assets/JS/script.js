@@ -58,7 +58,7 @@ function passwordOptionsPrompts() {
     alert('You must choose at least one character type!');
   }
 
-  // Password Object
+  // Password character selection Object
   var passwordSelection = {
     length: length,
     hasNumericChars: hasNumericChars,
@@ -70,6 +70,13 @@ function passwordOptionsPrompts() {
   return passwordSelection
 };
 
+// Universal Array Randomizer
+function randomize(a) {
+  var randArrayIndex = Math.floor(Math.random() * a.length);
+  var randElement = a[randArrayIndex];
+
+  return randElement;
+}
 
 // Write password to the #password input
 function writePassword() {
