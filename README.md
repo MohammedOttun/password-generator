@@ -16,9 +16,6 @@ An application that enables employees to generate random passwords based on crit
 ## Mock-Up
 ![The Password Generator application displays a red button to "Generate Password".](./Assets/images/03-javascript-homework-demo.png)
 
-## Grading Requirements
-This homework is graded based on the following criteria: 
-
 ## Deployment
 * Application is deployed here: https://mohammedottun.github.io/password-generator/
 
