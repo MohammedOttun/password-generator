@@ -78,6 +78,22 @@ function randomize(a) {
   return randElement;
 }
 
+// Password generator function
+function generatePassword() {
+  var selection = passwordSelection();
+  
+  // Array variable to store password string
+  var result = [];
+
+  // Array variable to store password character types possibilities 
+  var possiblecCharSelection = [];
+
+  // Array variable to store password charcter types user has chosen
+  var actualCharSelection = []; 
+
+
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
