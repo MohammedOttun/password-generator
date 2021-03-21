@@ -50,12 +50,26 @@ function passwordOptionsPrompts() {
   // Value of response to include numerical characters
   var hasSpecialChars = confirm('Click OK to include numerical characters in your password.');
 
+  // Evaluate whether user has chosen to inlcude at least one of the 4 character types
+  if (hasNumericChars === false &&
+    hasLowerCaseLetters === false &&
+    hasUpperCaseLetters === false &&
+    hasSpecialChars === false) {
+    alert('You must choose at least one character type!');
+  }
+
+  // Password Object
+  var passwordSelection = {
+    length: length,
+    hasNumericChars: hasNumericChars,
+    hasLowerCaseLetters: hasLowerCaseLetters,
+    hasUpperCaseLetters: hasUpperCaseLetters,
+    hasSpecialChars: hasSpecialChars
+  };
+
+  return passwordSelection
 };
 
-// Password Object
-var password = {
-
-};
 
 // Write password to the #password input
 function writePassword() {
